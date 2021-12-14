@@ -14,6 +14,8 @@
 		90EFB79627677A1B008C0FC6 /* Countdown.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 90EFB79427677A1B008C0FC6 /* Countdown.xcdatamodeld */; };
 		90EFB79827677A1D008C0FC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90EFB79727677A1D008C0FC6 /* Assets.xcassets */; };
 		90EFB79B27677A1D008C0FC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90EFB79927677A1D008C0FC6 /* LaunchScreen.storyboard */; };
+		90EFB7A7276860EB008C0FC6 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFB7A6276860EB008C0FC6 /* MyTableViewCell.swift */; };
+		90EFB7A927686108008C0FC6 /* countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFB7A827686108008C0FC6 /* countdown.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		90EFB79727677A1D008C0FC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90EFB79A27677A1D008C0FC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90EFB79C27677A1D008C0FC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90EFB7A6276860EB008C0FC6 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		90EFB7A827686108008C0FC6 /* countdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = countdown.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				90EFB78B27677A1B008C0FC6 /* AppDelegate.swift */,
 				90EFB78D27677A1B008C0FC6 /* SceneDelegate.swift */,
 				90EFB78F27677A1B008C0FC6 /* ViewController.swift */,
+				90EFB7A6276860EB008C0FC6 /* MyTableViewCell.swift */,
+				90EFB7A827686108008C0FC6 /* countdown.swift */,
 				90EFB79127677A1B008C0FC6 /* Main.storyboard */,
 				90EFB79727677A1D008C0FC6 /* Assets.xcassets */,
 				90EFB79927677A1D008C0FC6 /* LaunchScreen.storyboard */,
@@ -144,6 +150,8 @@
 				90EFB79027677A1B008C0FC6 /* ViewController.swift in Sources */,
 				90EFB78C27677A1B008C0FC6 /* AppDelegate.swift in Sources */,
 				90EFB78E27677A1B008C0FC6 /* SceneDelegate.swift in Sources */,
+				90EFB7A927686108008C0FC6 /* countdown.swift in Sources */,
+				90EFB7A7276860EB008C0FC6 /* MyTableViewCell.swift in Sources */,
 				90EFB79627677A1B008C0FC6 /* Countdown.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
