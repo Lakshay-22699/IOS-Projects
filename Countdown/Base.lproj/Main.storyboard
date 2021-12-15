@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LQm-Dd-Hz9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LQm-Dd-Hz9">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,17 +17,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tJB-La-FSG">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tJB-La-FSG">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="Hjy-D8-u20">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="50"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Hjy-D8-u20" customClass="MyTableViewCell" customModule="Countdown" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hjy-D8-u20" id="BH4-qc-bsp">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E21-90-rsG">
+                                                    <rect key="frame" x="10" y="15" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="Hvh-Uo-RDf"/>
+                                                        <constraint firstAttribute="width" constant="50" id="V9n-sy-pYz"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="5kz-Un-MaY">
+                                                    <rect key="frame" x="72" y="15" width="115.5" height="22"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wed, 15 Dec 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aS-xD-rU8">
+                                                    <rect key="frame" x="72" y="38" width="115.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 hours left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqN-ai-dfp">
+                                                    <rect key="frame" x="318" y="10" width="96" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="L8s-BD-MxX"/>
+                                                        <constraint firstAttribute="width" constant="96" id="nL0-IY-juz"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="OqN-ai-dfp" secondAttribute="trailing" id="8Ug-Js-06g"/>
+                                                <constraint firstItem="8aS-xD-rU8" firstAttribute="trailing" secondItem="5kz-Un-MaY" secondAttribute="trailing" id="GgO-5a-AWx"/>
+                                                <constraint firstItem="8aS-xD-rU8" firstAttribute="leading" secondItem="5kz-Un-MaY" secondAttribute="leading" id="Gwi-Hl-OcK"/>
+                                                <constraint firstItem="E21-90-rsG" firstAttribute="leading" secondItem="BH4-qc-bsp" secondAttribute="leading" constant="10" id="ONy-RT-3fz"/>
+                                                <constraint firstItem="5kz-Un-MaY" firstAttribute="leading" secondItem="E21-90-rsG" secondAttribute="trailing" constant="12" id="PIn-vu-9s1"/>
+                                                <constraint firstItem="5kz-Un-MaY" firstAttribute="top" secondItem="E21-90-rsG" secondAttribute="top" id="PSA-7D-bxI"/>
+                                                <constraint firstItem="OqN-ai-dfp" firstAttribute="centerY" secondItem="BH4-qc-bsp" secondAttribute="centerY" id="Uch-Bp-OKj"/>
+                                                <constraint firstItem="E21-90-rsG" firstAttribute="centerY" secondItem="BH4-qc-bsp" secondAttribute="centerY" id="jHp-mX-Lx7"/>
+                                                <constraint firstItem="OqN-ai-dfp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5kz-Un-MaY" secondAttribute="trailing" constant="10" id="kFf-uc-1Fg"/>
+                                                <constraint firstItem="8aS-xD-rU8" firstAttribute="top" secondItem="5kz-Un-MaY" secondAttribute="bottom" constant="1" id="lGm-E2-GHb"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="countdownName" destination="5kz-Un-MaY" id="AuI-a7-Hij"/>
+                                            <outlet property="date" destination="8aS-xD-rU8" id="UED-tI-Ddd"/>
+                                            <outlet property="emojiImg" destination="E21-90-rsG" id="6Kl-Rg-d6p"/>
+                                            <outlet property="timer" destination="OqN-ai-dfp" id="279-KG-MPg"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
